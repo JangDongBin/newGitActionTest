@@ -32,9 +32,3 @@ jobs:
       run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
       env:
         GITHUB_TOKEN: ${{ github.token }}
-
-    - uses: actions/upload-artifact
-      with:
-      name: my-artifact
-      path: ./my_path
-      retention-days: 30
